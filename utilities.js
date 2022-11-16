@@ -22,8 +22,8 @@ const readFromDatabase = () => {
 
 
 const user1 = {
-  'userName': 'Drew Thurman',
-  'accountBalance': 100,
+  'username': 'Drew Thurman',
+  'funds': 100,
   'password': '7878',
 }
 
