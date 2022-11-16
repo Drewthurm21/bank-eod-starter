@@ -112,18 +112,27 @@ class Bank {
     //your code here
   }
 
-
-  /* 
-
-  --- REFACTOR INSTRUCTIONS INCOMMING ---
-
-  */
-
-
   //addUserToAccount should add a user to an existing account
   addUserToAccount(accountNumber, userName, password) {
 
   }
+
+  /* 
+
+  Wait a sec... what? Our current account setup doesn't have the requirements for us to 
+  add multiple users to an account. In fact there are a lot of things we're not
+  offering with our accounts...
+
+  What happens if a user wants to:
+    - add or remove an authorized user
+    - to consolidate accounts?
+    - to change their password?
+    - take out a loan?
+    - the list goes on and on...
+
+  */
+
+
 
   //removeUserFromAccount should remove a user from an existing account
   removeUserFromAccount(accountNumber, userName, Password) {
