@@ -1,7 +1,10 @@
-//import the necessary tools & data to complete the tasks below
+//import the necessary tools & data to complete the tasks below.
+//We'll need our users from the utilities file and account class 
+//from the account file to get started
 
 
 /* 
+
   Let's use the tools we've learned today to start building a banking app.
   We'll start by creating a bank class that will store unique info like the
   branch location, branch capital and related accounts.
@@ -11,16 +14,18 @@
 
 class Bank {
 
-  /* Our constructor should initialize the bank with a:
-  -name, location, starting capital and accounts  
+  /* 
+  Our constructor should initialize the bank with a:
+    -name, location, starting capital and accounts
 
   it should set the following properties:
-  -branch name should be "FMB " plus the branch city
-  -branch location should be the city and state
-  -starting capital should be the starting capital (default to $100,000)
-  -accounts should be an empty array to start
+    -branch name should be "FMB " plus the branch city
+    -branch location should be the city and state
+    -starting capital should be the starting capital (default to $100,000)
+    -accounts should be an empty array to start
 
   */
+
 
   constructor(city, state, startingCapital) {
 
@@ -40,7 +45,6 @@ class Bank {
     //   password: 'strongPassword'
     // }
 
-    //your code here
   }
 
   // closeAccount - (pw, acctNum)
@@ -54,6 +58,10 @@ class Bank {
   // getAccountInfo - (pw, acctNum)  
   //   -should return the account information for a given account number
   checkAccountInfo(accountNumber, password) {
+    //your code here
+  }
+
+  closeAccount(accountNumber, password) {
     //your code here
   }
 
@@ -90,18 +98,27 @@ class Bank {
     //your code here
   }
 
-
-  /* 
-
-  --- REFACTOR INSTRUCTIONS INCOMMING ---
-
-  */
-
-
   //addUserToAccount should add a user to an existing account
   addUserToAccount(accountNumber, userName, password) {
 
   }
+
+  /* 
+
+  Wait a sec... what? Our current account setup doesn't have the requirements for us to 
+  add multiple users to an account. In fact there are a lot of things we're not
+  offering with our accounts...
+
+  What happens if a user wants to:
+    - add or remove an authorized user
+    - to consolidate accounts?
+    - to change their password?
+    - take out a loan?
+    - the list goes on and on...
+
+  */
+
+
 
   //removeUserFromAccount should remove a user from an existing account
   removeUserFromAccount(accountNumber, userName, Password) {
@@ -113,12 +130,3 @@ class Bank {
 
   }
 }
-
-
-
-
-const myBank = new Bank('Free Money Bank', 'USA', 10000)
-console.log(`OPEN NEW BANK`, myBank)
-
-
-
