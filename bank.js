@@ -1,13 +1,12 @@
-//import the necessary tools & data to complete the tasks below.
-//We'll need our users from the utilities file and account class 
-//from the account file to get started
-
-
 /* 
 
   Let's use the tools we've learned today to start building a banking app.
   We'll start by creating a bank class that will store unique info like the
-  branch location, branch capital and related accounts.
+  branch location, branch capital and related accounts. We'll also create
+  methods to open and close accounts, process deposits and withdrawls and
+  transfer funds between accounts. We will also need to create an account 
+  class that will store unique info like the account name, account number, 
+  account owner, password and funds.
 
   It will be up to you to decide what arguments to pass into the constructor
   and each method. You will also need to decide what properties to set and
@@ -16,6 +15,10 @@
   We'll start by building out the basic functionality of the bank. Once we
   have that working we'll build the account class and, finally, we'll
   add some more advanced features.
+
+  To begin, lets import the necessary tools & data to complete the tasks below.
+  We'll need our users from the utilities file and the account class 
+  from the account file to get started
 
 */
 
@@ -31,7 +34,6 @@ class Bank {
     -branch location should be the city and state
     -starting capital should be the starting capital (default to $100,000)
     -accounts should be an empty array to start
-
   */
 
 
@@ -105,23 +107,6 @@ class Bank {
   addUserToAccount() {
 
   }
-
-  /* 
-
-  Wait a sec... what? Our current account setup doesn't have the requirements for us to 
-  add multiple users to an account. In fact there are a lot of things we're not
-  offering with our accounts...
-
-  What happens if a user wants to:
-    - add or remove an authorized user
-    - to consolidate accounts?
-    - to change their password?
-    - take out a loan?
-    - the list goes on and on...
-
-  */
-
-
 
   //removeUserFromAccount should remove a user from an existing account
   removeUserFromAccount() {
