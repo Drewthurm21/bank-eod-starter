@@ -9,6 +9,14 @@
   We'll start by creating a bank class that will store unique info like the
   branch location, branch capital and related accounts.
 
+  It will be up to you to decide what arguments to pass into the constructor
+  and each method. You will also need to decide what properties to set and
+  how to set them.
+
+  We'll start by building out the basic functionality of the bank. Once we
+  have that working we'll build the account class and, finally, we'll
+  add some more advanced features.
+
 */
 
 
@@ -27,79 +35,74 @@ class Bank {
   */
 
 
-  constructor(city, state, startingCapital) {
+  constructor() {
 
   }
 
-  // openAccount - (pw, name, initialDeposit)
+  // openAccount - 
   //   -should create a new account for a customer
   //   -account numbers should be assigned sequentially, starting with 0
   //   -should add the account funds to total bank capital
   //   -should return the new account number
-  openAccount(user, password, funds) {
-    // example user object
-    // const newAccount = {
-    //   accountNumber: 9453,
-    //   userName: 'John Doe',
-    //   accountBalance: 1076.22,
-    //   password: 'strongPassword'
-    // }
+  openAccount() {
+    // example user objects are located in the utilities file.
+    //your code here
 
   }
 
-  // closeAccount - (pw, acctNum)
+  // closeAccount -
   //   -should close the intended account for a customer
   //   -should remove the funds from bank capital 
   //   -customer password and account number are required
-  closeAccount(accountNumber, password) {
+  closeAccount() {
     //your code here
   }
 
-  // getAccountInfo - (pw, acctNum)  
+  // getAccountInfo -  
   //   -should return the account information for a given account number
-  checkAccountInfo(accountNumber, password) {
+  checkAccountInfo() {
     //your code here
   }
 
-  closeAccount(accountNumber, password) {
+  closeAccount() {
     //your code here
   }
 
-  // checkBalance - (pw, acctNum)
+  // checkBalance -
   //   -should return the balance of the account
-  checkBalance(accountNumber, password) {
+  checkBalance() {
     //your code here
   }
 
-  // processDeposit - (pw, acctNum, amount)
+  // processDeposit -
   //   -should deposit funds into the customer account
   //   -should add the funds to the bank's total capital
   //   -should return the newly updated account with all information
-  processDeposit(accountNumber, password, funds) {
+  processDeposit() {
     //your code here
   }
 
-  // processWithdraw - (pw, acctNum, amount)
+  // processWithdraw -
   //   -should allow a customer to withdrawl from an account
   //   -should remove the funds from the account and bank capital if able
   //   -should return the newly updated account with all information if successful
   //   -should return an error message if the customer does not have enough funds
   //   -we do not allow overdrafts
-  processWithdrawl(accountNumber, password, funds) {
+  processWithdrawl() {
     //your code here
   }
 
-  // transferFunds - (pw, acctNum, amount, acctNum2)
+  // transferFunds -
   //   -should move funds from one account to another, if able
   //   -it should return the newly updated account with all information if successful
   //   -it should return an error message if the customer does not have enough funds
   //   -we do not allow overdrafts
-  transferFunds(accountNumber, password, funds, accountNumber2) {
+  transferFunds() {
     //your code here
   }
 
   //addUserToAccount should add a user to an existing account
-  addUserToAccount(accountNumber, userName, password) {
+  addUserToAccount() {
 
   }
 
@@ -121,7 +124,7 @@ class Bank {
 
 
   //removeUserFromAccount should remove a user from an existing account
-  removeUserFromAccount(accountNumber, userName, Password) {
+  removeUserFromAccount() {
 
   }
 

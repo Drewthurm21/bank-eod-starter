@@ -10,33 +10,33 @@ class Account {
     -the isActive property should be set to 'true'
   */
 
-  constructor(accountName, accountNumber, accountOwner, password, funds, branchName) {
+  constructor() {
 
   }
 
 
   //addUser should add a user to the authorized users array
   //there can be a maximum of 10 users per account
-  addUser(userName) {
+  addUser() {
 
   }
 
   //removeUser should remove a user from the authorized users array
   //there must be at least 1 user on an account
-  removeUser(userName) {
+  removeUser() {
 
   }
 
   //depositFunds should deposit funds into the account
   //should return the new total funds
-  depositFunds(amount) {
+  depositFunds() {
 
   }
 
   //withdrawlFunds should withdrawl funds from the account. 
   //we do not allow overdraft.
   //it should return the new account balance if successful or false if unsuccessful.
-  withdrawlFunds(amount) {
+  withdrawlFunds() {
 
   }
 }
